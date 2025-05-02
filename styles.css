@@ -236,17 +236,18 @@ section {
 .image-placeholder {
     width: 350px;
     height: 350px;
+    overflow: hidden;
     border-radius: 50%;
-    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: var(--box-shadow);
 }
 
-.image-placeholder i {
-    font-size: 150px;
-    color: #dddddd;
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
 
 .about-text {
